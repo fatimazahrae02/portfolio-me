@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fatima-Zahrae LAALIOUI — Portfolio</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <nav id="desktop-nav">
+    <div class="wrap">
+      <div class="logo">Fatima-Zahrae LAALIOUI</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== Hero / Profile ===== -->
+  <section id="profile">
+    <div class="container grid">
+      <div class="photo-frame">
+        <img src="./assets/cv-photo.jpeg" alt="Photo de profil" class="profile-pic" />
+      </div>
+
+      <div>
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Fatima-Zahrae LAALIOUI</h1>
+        <p class="section__text__p2">Computer Science Student • Interested in ERP (SAP), DevOps & Modern Web</p>
+
+        <div class="btn-row">
+          <button class="btn" onclick="window.open('./assets/CV_LAALIOUI-fatimazahrae.pdf')">Download CV</button>
+          <button class="btn" onclick="location.href='#contact'">Contact Info</button>
+        </div>
+
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="icon"
+               onclick="location.href='https://www.linkedin.com/in/fatima-zahrae-laalioui-954681280/'" />
+          <img src="./assets/github.png" alt="GitHub" class="icon"
+               onclick="location.href='https://github.com/fatimazahrae02'" />
+        </div>
+      </div>
+    </div>
+
+    <img src="./assets/arrow.png" alt="" class="icon arrow" onclick="location.href='#about'" />
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="top">
+        <p class="section__text__p1">Get To Know More</p>
+        <h2 class="title">About Me</h2>
+        <img src="./assets/cv-photo.jpeg" alt="Profile" class="about-pic" />
+      </div>
+
+      <div class="about-containers">
+        <div class="details-card">
+          <img src="./assets/experience.png" class="icon" alt="Experience" />
+          <h3>Experience</h3>
+          <p>Internships & Freelance<br/>Software & Web Development</p>
+        </div>
+
+        <div class="details-card">
+          <img src="./assets/education.png" class="icon" alt="Education" />
+          <h3>Education</h3>
+          <p>B.Eng. in Computer Science<br/>EMSI — MIAGE</p>
+        </div>
+      </div>
+
+      <p class="text">
+        Future software engineer passionate about ERP (SAP), DevOps and full-stack. I connect technical performance
+        with business goals using Spring Boot, React, Docker and PostgreSQL to build scalable, maintainable products.
+      </p>
+    </div>
+
+    <img src="./assets/arrow.png" alt="" class="icon arrow" onclick="location.href='#experience'" />
+  </section>
+
+  <!-- ===== Experience (timeline) ===== -->
+  <section id="experience">
+    <div class="container">
+      <p class="section__text__p1">Parcourez mes</p>
+      <h2 class="title">Expériences Professionnelles</h2>
+
+      <div class="exp-wrap">
+        <!-- Item 1 -->
+        <div class="exp-item">
+          <div class="exp-card">
+            <h3 class="exp-role">Stage — Ministère de la Transition Énergétique et du Développement Durable</h3>
+            <p class="exp-date">Juil. 2025 – Août 2025</p>
+            <ul class="exp-points">
+              <li>Plateforme de traçabilité du charbon (Région de Jerada).</li>
+              <li><strong>Technologies :</strong> Spring Boot, React, PostgreSQL, Docker, Postman, GitLab.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="exp-item">
+          <div class="exp-card">
+            <h3 class="exp-role">Stage dev web — Intelligence Source</h3>
+            <p class="exp-date">Juin 2024 – Sept. 2024</p>
+            <ul class="exp-points">
+              <li>Application de gestion des offres d’emploi avec candidatures et suivi.</li>
+              <li><strong>Technologies :</strong> Python, Django, HTML/CSS/JS, PostgreSQL, GitHub, Docker.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="exp-item">
+          <div class="exp-card">
+            <h3 class="exp-role">Développement Desktop — SOMARBRE (Freelance)</h3>
+            <p class="exp-date">Juin 2023 – Août 2023</p>
+            <ul class="exp-points">
+              <li>Application de gestion des incidents (signalement, suivi, filtres, statut).</li>
+              <li><strong>Technologies :</strong> Java, SQL, Swing (UI), JDBC, MySQL, NetBeans.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src="./assets/arrow.png" alt="" class="icon arrow" onclick="location.href='#academic-projects'" />
+  </section>
+
+  <!-- ===== Academic & Personal Projects ===== -->
+  <section id="academic-projects">
+    <div class="container">
+      <p class="section__text__p1">Explore My</p>
+      <h2 class="title">Academic & Personal Projects</h2>
+
+      <div class="projects-grid">
+        <!-- DevOps -->
+        <article class="card">
+          <img src="./assets/end-to-end.png" alt="DevOps pipeline" class="project-img" />
+          <h3>End-to-End DevOps Project</h3>
+          <p>CI/CD pipeline with Jenkins and Kubernetes deployment using Docker, GitHub, and Helm.</p>
+          <div class="btn-row">
+            <button class="btn" onclick="location.href='https://github.com/fatimazahrae02/'">GitHub</button>
+          </div>
+        </article>
+
+        <!-- Microservices -->
+        <article class="card">
+          <img src="./assets/microservices.png" alt="Spring Cloud" class="project-img" />
+          <h3>Microservices Application</h3>
+          <p>Distributed system using Spring Cloud (Config, Gateway, Eureka, OpenFeign, Resilience4j).</p>
+          <div class="btn-row">
+            <button class="btn" onclick="location.href='https://github.com/fatimazahrae02/'">GitHub</button>
+          </div>
+        </article>
+
+        <!-- J2EE Bank -->
+        <article class="card">
+          <img src="./assets/image.png" alt="Bank app" class="project-img" />
+          <h3>Bank Management Web App</h3>
+          <p>Web application for bank account management built with J2EE and JSP/Servlets.</p>
+          <div class="btn-row">
+            <button class="btn" onclick="location.href='https://github.com/fatimazahrae02/'">GitHub</button>
+          </div>
+        </article>
+
+        <!-- ASP.NET Restaurant -->
+        <article class="card">
+          <img src="./assets/image_copy.png" alt="Restaurant" class="project-img" />
+          <h3>Restaurant Management System</h3>
+          <p>ASP.NET MVC app for order tracking, stock control, and staff management.</p>
+          <div class="btn-row">
+            <button class="btn" onclick="location.href='https://github.com/fatimazahrae02/'">GitHub</button>
+          </div>
+        </article>
+
+        <!-- Gardening app -->
+        <article class="card">
+          <img src="./assets/image-copy.png" alt="Gardening app" class="project-img" />
+          <h3>Gardening Companion App</h3>
+          <p>Mobile application built with Flutter & Dart to help you take care of your plants.</p>
+          <div class="btn-row">
+            <button class="btn" onclick="location.href='https://github.com/fatimazahrae02/'">GitHub</button>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <img src="./assets/arrow.png" alt="" class="icon arrow" onclick="location.href='#projects'" />
+  </section>
+
+  <!-- ===== Featured Projects ===== -->
+  <section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+
+  <div class="projects-container">
+    <!-- Coal-Trace -->
+    <div class="project-card">
+      <img src="./assets/coaltrace.png" alt="Coal Trace project" class="project-img" />
+      <h2>Coal-Trace — Plateforme de Traçabilité du Charbon</h2>
+      <p>Spring Boot + React pour digitaliser la traçabilité du charbon (stocks, lots, réservations) à Jerada.</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('https://github.com/fatimazahrae02/coal-trace')">GitHub</button>
+      </div>
+    </div>
+
+    <!-- E-Job -->
+    <div class="project-card">
+      <img src="./assets/e-job.png" alt="E-Job project" class="project-img" />
+      <h2>E-Job — Portail de Recherche d’Emploi</h2>
+      <p>Plateforme de recrutement avec <strong>Django</strong> + <strong>Bootstrap</strong> (recruteurs & candidats).</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('https://github.com/fatimazahrae02/Gestion-des-emplois')">GitHub</button>
+      </div>
+    </div>
+
+    <!-- EMSI-ONE -->
+    <div class="project-card">
+      <img src="./assets/association-emsi.png" alt="EMSI ONE project" class="project-img" />
+      <h2>EMSI-ONE — Association des étudiants</h2>
+      <p><strong>Spring Boot</strong> + <strong>Thymeleaf</strong> + <strong>MySQL</strong> : adhésions, clubs, événements, annonces, rôles Admin/Étudiant.</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('https://github.com/fatimazahrae02/emsi_association')">GitHub</button>
+      </div>
+    </div>
+  </div>
+
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+</section>
+
+
+  <!-- ===== Contact ===== -->
+  <section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
+      <p><a href="mailto:fatimazahraelaalioui02@gmail.com">fatimazahraelaalioui02@gmail.com</a></p>
+    </div>
+
+    <div class="contact-info-container">
+      <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+      <p><a href="https://www.linkedin.com/in/fatima-zahrae-laalioui-954681280/" target="_blank">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      <p>Copyright &#169; 2025 Fatima-Zahrae LAALIOUI. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Optionnel: petit JS pour fermer le menu mobile si tu ajoutes un hamburger plus tard -->
+  <script>
+    // placeholder si besoin
+  </script>
+</body>
+</html>
